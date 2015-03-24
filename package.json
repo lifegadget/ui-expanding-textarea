@@ -1,6 +1,6 @@
 {
 	"name": "ui-expanding-textarea",
-	"version": "0.0.0",
+	"version": "0.0.2",
 	"description": "The default blueprint for ember-cli addons.",
 	"directories": {
 		"doc": "doc",
@@ -11,7 +11,7 @@
 		"build": "ember build",
 		"test": "ember test"
 	},
-	"repository": "",
+	"repository": "git@github.com:lifegadget/ui-expanding-textarea.git",
 	"engines": {
 		"node": ">= 0.10.0"
 	},
@@ -31,7 +31,8 @@
 		"ember-export-application-global": "^1.0.2"
 	},
 	"keywords": [
-		"ember-addon"
+		"ember-addon",
+		"ui", "form-control"
 	],
 	"dependencies": {
 		"ember-cli-htmlbars": "0.7.4",
