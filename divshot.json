@@ -1,0 +1,6 @@
+{
+  "name": "ui-expanding-textarea",
+  "root": "dist",
+  "clean_urls": true,
+  "error_page": "error.html"
+}

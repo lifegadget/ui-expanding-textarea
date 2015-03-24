@@ -1,25 +1,3 @@
-# Ui-expanding-textarea
+# ui-expanding-textarea
 
-This README outlines the details of collaborating on this Ember addon.
-
-## Installation
-
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+Textarea form control which automatically expands/contracts based on the size of the content. Wraps the very nicely implemented: [bgrins/ExpandingTextAreas](https://github.com/bgrins/ExpandingTextareas).
