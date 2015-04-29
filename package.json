@@ -1,7 +1,7 @@
 {
 	"name": "ui-expanding-textarea",
 	"version": "0.0.7",
-	"description": "The default blueprint for ember-cli addons.",
+	"description": "Textareas but better. Trust me, they'll grow on you.",
 	"directories": {
 		"doc": "doc",
 		"test": "tests"

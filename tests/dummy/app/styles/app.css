@@ -69,3 +69,7 @@ note {
 .link.selected {
 	font-weight: 900;
 }
+
+h1 a:hover {
+    text-decoration: none;
+}
