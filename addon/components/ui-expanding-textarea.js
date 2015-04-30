@@ -5,7 +5,8 @@ export default Ember.Component.extend({
 	layout: layout,
 	tagName: 'textarea',
 	attributeBindings: ['_wrap:wrap', 'rows', 'placeholder'],
-	classNames: ['form-control','ui-expanding-textarea'],
+	classNames: ['ui-expanding-textarea'],
+  classNameBindings: ['style', 'align'],
 	value: null,
 	valueListener: function() {
 		this.$('textarea').val(this.get('value')).change();
@@ -15,6 +16,8 @@ export default Ember.Component.extend({
 		return this.get('wrap') ? 'on' : 'off';
 	}.property('wrap'),
 	rows: 1,
+  style: 'form-control',
+  align: 'left',
 	
 	initialized: false,
 	_initialize: function() {

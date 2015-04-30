@@ -1,7 +1,7 @@
 {
 	"name": "ui-expanding-textarea",
-	"version": "0.0.8",
-	"description": "Textareas but better. Trust me, they'll grow on you.",
+	"version": "0.0.9",
+	"description": "A simple textarea control with magic growing/shrinking powers",
 	"directories": {
 		"doc": "doc",
 		"test": "tests"
