@@ -1,6 +1,6 @@
 {
   "name": "ui-expanding-textarea",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A simple textarea control with magic growing/shrinking powers",
   "directories": {
     "doc": "doc",
@@ -25,7 +25,7 @@
     "ember-cli-dependency-checker": "0.0.8",
     "ember-cli-ic-ajax": "0.1.1",
     "ember-cli-inject-live-reload": "^1.3.0",
-    "ember-cli-qunit": "0.3.10",
+    "ember-cli-qunit": "0.3.11",
     "ember-cli-uglify": "1.0.1",
     "ember-try": "0.0.4",
     "ember-data": "1.0.0-beta.16.1",
