@@ -1,4 +1,4 @@
-# ui-expanding-textarea ![ ](https://travis-ci.org/lifegadget/ui-expanding-textarea.svg)
+# ui-expanding-textarea ![ ](https://travis-ci.org/lifegadget/ui-expanding-textarea.svg) [![npm version](https://badge.fury.io/js/ui-expanding-textarea.svg)](http://badge.fury.io/js/ui-expanding-textarea)
 
 Textarea form control which automatically expands/contracts based on the size of the content. Wraps the very nicely implemented: [bgrins/ExpandingTextAreas](https://github.com/bgrins/ExpandingTextareas).
 
