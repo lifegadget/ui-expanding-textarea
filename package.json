@@ -1,6 +1,6 @@
 {
   "name": "ui-expanding-textarea",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A simple textarea control with magic growing/shrinking powers",
   "directories": {
     "doc": "doc",
@@ -15,7 +15,21 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Ken Snyder",
+  "files": [
+    "Brocfile.js",
+    "LICENSE.md",
+    "README.md",
+    "addon",
+    "app",
+    "bower.json",
+    "config",
+    "index.js",
+    "package.json",
+    "testem.json",
+    "vendor"
+  ],
+  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
