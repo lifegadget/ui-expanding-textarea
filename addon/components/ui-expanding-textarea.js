@@ -1,4 +1,5 @@
 import Ember from 'ember';
+const { computed, observer, $, A, run, on, typeOf, debug, keys, get, set, inject, isEmpty, defineProperty, ObjectProxy } = Ember;    // jshint ignore:line
 import layout from '../templates/components/ui-expanding-textarea';
 
 export default Ember.Component.extend({
@@ -8,33 +9,33 @@ export default Ember.Component.extend({
 	classNames: ['ui-expanding-textarea'],
   classNameBindings: ['style', 'align'],
 	value: null,
-	valueListener: function() {
+	valueListener: observer('value', function() {
 		this.$('textarea').val(this.get('value')).change();
-	}.on('value'),
+	}),
 	wrap: true,
-	_wrap: function() {
+	_wrap: computed('wrap', function() {
 		return this.get('wrap') ? 'on' : 'off';
-	}.property('wrap'),
+	}),
 	rows: 1,
   style: 'form-control',
   align: 'left',
-	
+
 	initialized: false,
-	_initialize: function() {
+	_initialize: on('init', function() {
 		var self = this;
-		Ember.run.next(this, function() {
+		run.next( () => {
 			this.$().expanding({
 				update: function() {
 					self.set('value',self.$().val());
-					Ember.run.debounce(self, function() {
+					run.debounce(self, function() {
 						self.sendAction('update');
 					},300);
 				}
 			});
-			this.set('initialized', true);								
+			this.set('initialized', true);
 		});
-	}.on('didInsertElement'),
-	_teardown: function() {
+	}),
+	_teardown: on('willDestroyElement', function() {
 		this.$().expanding('destroy');
-	}.on('willDestroyElement')
+	})
 });

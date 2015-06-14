@@ -4,31 +4,31 @@
 
 	<h3>Description</h3>
 	<p>
-		This component stands on the shoulder of the great work done by 
-		<a href="http://github.com/bgrins">@bgrins</a>, <a href="http://github.com/bgrins">@domchristie</a>, and originally Neil Jenkins article on 
+		This component stands on the shoulder of the great work done by
+		<a href="http://github.com/bgrins">@bgrins</a>, <a href="http://github.com/bgrins">@domchristie</a>, and originally Neil Jenkins article on
 		<a href="http://bgrins.github.io/ExpandingTextareas/www.alistapart.com/articles/expanding-text-areas-made-elegant/">alistapart</a>.
 	</p>
-	
+
 	<p>
 		Simply stated, this is a textarea HTML control but unlike your run of the mill textarea this one expands and contracts to the appropriate
-		size. How cool is that? Pretty cool. Ok, as you may have already guessed this component now wraps what was already spectacularly great into an 
-		Ember component. 
+		size. How cool is that? Pretty cool. Ok, as you may have already guessed this component now wraps what was already spectacularly great into an
+		Ember component.
 	</p>
-	
+
 	<p>
-		What was that noise? Was that your dropping on the floor? Yeah it's pretty great, huh? 
+		What was that noise? Was that your dropping on the floor? Yeah it's pretty great, huh?
 	</p><p>
 		Well with great controls, comes great responsibility.
-		And of course what I mean is that if you use this completely amazing control you should feel responsible for sending in PR's for any problems you 
-		find with the Emberness of it (obviously the underlying goodness should be directed to the great authors previously mentioned). 
+		And of course what I mean is that if you use this completely amazing control you should feel responsible for sending in PR's for any problems you
+		find with the Emberness of it (obviously the underlying goodness should be directed to the great authors previously mentioned).
 	</p>
 
 	<h3>Usage</h3>
-	
+
 	<div id="ui-number-array-input" class="container">
 		<div class="row">
 			<div class="col-xs-5  col-md-3">
-				{{ui-expanding-textarea placeholder="your text here" value=myTextInput}}
+				{{ui-expanding-textarea placeholder="your text here" }}
 			</div>
 			<div class="col-xs-7 col-md-9">
 				Basic usage<br/>
@@ -39,7 +39,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-5  col-md-3">
-				{{ui-expanding-textarea placeholder="your text here" rows=3 value=myTextInput}}
+				{{ui-expanding-textarea placeholder="your text here" rows=3 }}
 			</div>
 			<div class="col-xs-7 col-md-9">
 				Default to 3 rows<br/>
@@ -50,22 +50,33 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-5  col-md-3">
-				{{ui-expanding-textarea placeholder="your text here" wrap=false}}
+				{{ui-expanding-textarea placeholder="your text here" wrap=false }}
 			</div>
 			<div class="col-xs-7 col-md-9">
 				Wrap turned off (e.g., carraige return extends vertical space but words don't auto wrap)<br/>
 				<code>
-	\{{ui-expanding-textarea placeholder="your text here" wrap=false}}
+	\{{ui-expanding-textarea placeholder="your text here" wrap=false value=myTextInput}}
 				</code>
 			</div>
 		</div>
-		
+      <div class="row">
+        <div class="col-xs-5  col-md-3">
+          {{ui-expanding-textarea value=lorem placeholder="your text here" }}
+        </div>
+        <div class="col-xs-7 col-md-9">
+          Initialising control with value set<br/>
+          <code>
+    \{{ui-expanding-textarea value=lorem placeholder="your text here"}}
+          </code>
+        </div>
+      </div>
+
 	</div>
-	
+
 
 
 	<h3>Styles</h3>
-	
+
 	<div id="ui-number-array-input" class="container">
 		<div class="row">
 			<div class="col-xs-5  col-md-3">
@@ -89,30 +100,39 @@
 				</code>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-5  col-md-3">
-				{{ui-expanding-textarea placeholder="your text here" value=myTextInput style='quoted'}}
-			</div>
-			<div class="col-xs-7 col-md-9">
-				Quoted style<br/>
-				<code>
-	\{{ui-expanding-textarea value=myTextInput placeholder="your text here" style='quoted'}}
-				</code>
-			</div>
-		</div>
+      <div class="row">
+        <div class="col-xs-5  col-md-3">
+          {{ui-expanding-textarea placeholder="your text here" value=myTextInput style='quoted' rows=2}}
+        </div>
+        <div class="col-xs-7 col-md-9">
+          Quoted style<br/>
+          <code>
+    \{{ui-expanding-textarea value=myTextInput placeholder="your text here" style='quoted' rows=2}}
+          </code>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-5  col-md-3">
+            {{ui-expanding-textarea placeholder="your text here" value=myTextInput style='suave' rows=2}}
+          </div>
+          <div class="col-xs-7 col-md-9">
+            Suave style<br/>
+            <code>
+      \{{ui-expanding-textarea value=myTextInput placeholder="your text here" style='suave' rows=2}}
+            </code>
+          </div>
+        </div>
     </div>
-    
-    
-    
+
 	<h3>Alignment</h3>
-	
+
 	<div id="ui-number-array-input" class="container">
 		<div class="row">
 			<div class="col-xs-5  col-md-3">
 				{{ui-expanding-textarea placeholder="your text here" value=myTextInput style='minimalist' align="left"}}
 			</div>
 			<div class="col-xs-7 col-md-9">
-				Minialist style<br/>
+				Left Alignment<br/>
 				<code>
 	\{{ui-expanding-textarea value=myTextInput placeholder="your text here" style='minimalist' align="left"}}
 				</code>
@@ -123,7 +143,7 @@
 				{{ui-expanding-textarea placeholder="your text here" value=myTextInput style='minimalist' align="center"}}
 			</div>
 			<div class="col-xs-7 col-md-9">
-				Minialist style<br/>
+				Centered Alignment<br/>
 				<code>
 	\{{ui-expanding-textarea value=myTextInput placeholder="your text here" style='minimalist' align="center"}}
 				</code>
@@ -134,7 +154,7 @@
 				{{ui-expanding-textarea placeholder="your text here" value=myTextInput style='minimalist' align="right"}}
 			</div>
 			<div class="col-xs-7 col-md-9">
-				Minialist style<br/>
+				Right Alignment<br/>
 				<code>
 	\{{ui-expanding-textarea value=myTextInput placeholder="your text here" style='minimalist' align="right"}}
 				</code>

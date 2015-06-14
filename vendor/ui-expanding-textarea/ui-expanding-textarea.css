@@ -3,7 +3,7 @@
 	  -webkit-box-sizing: border-box;
 	     -moz-box-sizing: border-box;
 	          box-sizing: border-box;
-	  width: 100%;	
+	  width: 100%;
 }
 .ui-expanding-textarea.left {
     text-align: left;
@@ -26,12 +26,25 @@
     border: none;
     outline: none;
     border-left: 4px solid lightgrey;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #FAFAFA;
+}
+.ui-expanding-textarea.quoted:hover {
+    background-color: #F2F2F2;
+    outline-top: 1px solid lightgrey;
+}
+
+.ui-expanding-textarea.suave {
+    border: none;
+    outline: none;
+    border-left: 4px solid lightgrey;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     padding-left: 8px;
     padding-right: 8px;
 }
-.ui-expanding-textarea.quoted:hover {
+.ui-expanding-textarea.suave:hover {
     background-color: #F9F9F9;
     outline-top: 1px solid lightgrey;
 }
