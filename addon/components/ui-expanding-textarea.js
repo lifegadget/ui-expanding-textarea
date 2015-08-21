@@ -1,5 +1,6 @@
 import Ember from 'ember';
-const { computed, observer, $, A, run, on, typeOf, debug, keys, get, set, inject, isEmpty, defineProperty, ObjectProxy } = Ember;    // jshint ignore:line
+const { keys, create } = Object; // jshint ignore:line
+const {computed, observer, $, A, run, on, typeOf, debug, defineProperty, get, set, inject, isEmpty} = Ember;  // jshint ignore:line
 import layout from '../templates/components/ui-expanding-textarea';
 
 export default Ember.Component.extend({
@@ -23,7 +24,7 @@ export default Ember.Component.extend({
 	initialized: false,
 	_initialize: on('init', function() {
 		var self = this;
-		run.next( () => {
+		run.schedule('afterRender', () => {
 			this.$().expanding({
 				update: function() {
 					self.set('value',self.$().val());
