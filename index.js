@@ -9,12 +9,5 @@ module.exports = {
 		this._super.included(app);
 		app.import('bower_components/expanding-textareas/expanding.js');
 		app.import('vendor/ui-expanding-textarea/ui-expanding-textarea.css');
-	},
-  normalizeEntityName: function() {}, // no-op since we're just adding dependencies
-  afterInstall: function() {
-   return this.addBowerPackagesToProject([
-		 {name: 'expanding-textareas', target: '0.2.0'}
-	 ]);
- 	}
-
+	}
 };
