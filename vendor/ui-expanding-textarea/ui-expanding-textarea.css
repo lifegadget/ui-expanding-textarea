@@ -2,7 +2,7 @@
 	ensures that people using flexbox
 	will get the full width as a starting point
 */
-.expanding-wrapper .ui-expanding-textarea {
+.expanding-wrapper {
 	flex: 1 1;
 }
 
