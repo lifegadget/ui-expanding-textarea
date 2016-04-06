@@ -1,0 +1,9 @@
+{
+  "firebase": "ui-expanding-textarea",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
