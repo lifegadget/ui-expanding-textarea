@@ -1,9 +1,12 @@
+/*jshint node:true*/
 module.exports = {
-  normalizeEntityName: function() {}, // no-op since we're just adding dependencies
-  afterInstall: function() {
-    this.ui.writeLine('Installing bower dependency of "expanding-textareas"');
+  description: 'install Bower deps',
+
+  normalizeEntityName: function() {
+  },
+  afterInstall: function(options) {
     return this.addBowerPackagesToProject([
-  	   {name: 'expanding-textareas', target: '0.2.0'}
+      {name: 'expanding-textareas', target: '0.2.0'}
     ]);
- 	}
+  }
 };
