@@ -7,7 +7,7 @@ module.exports = {
 	description: 'textarea input that auto-expand/contracts vertically',
 	included: function(app) {
 		this._super.included(app);
-		app.import('bower_components/expanding-textareas/expanding.js');
+		app.import('bower_components/expanding-textareas/dist/expanding.jquery.js');
 		app.import('vendor/ui-expanding-textarea/ui-expanding-textarea.css');
 	}
 };

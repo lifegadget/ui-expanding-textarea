@@ -1,13 +1,12 @@
 import Ember from 'ember';
-const { keys, create } = Object; // jshint ignore:line
-const {computed, observer, $, A, run, on, typeOf, debug, defineProperty, get, set, inject, isEmpty} = Ember;  // jshint ignore:line
+const {computed, observer, run, on} = Ember; 
 import layout from '../templates/components/ui-expanding-textarea';
 
 export default Ember.Component.extend({
 	layout: layout,
 	tagName: 'textarea',
 	attributeBindings: ['_wrap:wrap', 'rows', 'placeholder'],
-	classNames: ['ui-expanding-textarea'],
+	classNames: ['ui-expanding-textarea expanding'],
   classNameBindings: ['style', 'align'],
 	value: null,
 	valueListener: observer('value', function() {
