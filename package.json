@@ -1,6 +1,6 @@
 {
   "name": "ui-expanding-textarea",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "A simple textarea control with magic growing/shrinking powers",
   "directories": {
     "doc": "doc",
