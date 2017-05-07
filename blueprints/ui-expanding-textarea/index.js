@@ -6,7 +6,7 @@ module.exports = {
   },
   afterInstall: function(options) {
     return this.addBowerPackagesToProject([
-      {name: 'expanding-textareas', target: '0.2.0'}
+      {name: 'expanding-textareas', target: '1.0.2'}
     ]);
   }
 };
